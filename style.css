@@ -18,6 +18,14 @@ main {
   color: white;
 }
 
+.vertically-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 #header {
   text-align: justify;
 }
@@ -57,18 +65,46 @@ form {
   box-shadow: 0 7px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
+form div {
+  width: 460px;
+  margin-bottom: 20px;
+}
+
 form input {
   height: 10px;
-  margin-bottom: 20px;
   border-radius: 4px;
-  border: 1px solid lightgray;
+  border: 1px solid hsl(246, 25%, 77%);
   padding: 20px 30px 20px 30px;
   font-family: "Poppins", sans-serif;
   color: gray;
   font-weight: 500;
+  width: 400px;
+  outline: none;
+}
+
+form input:focus:valid {
+  border-color: hsl(249, 10%, 26%);
+}
+
+.submitted {
+  border: 2px solid hsl(0, 100%, 74%);
+  background: url(./img/icon-error.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 420px 15px;
+}
+
+form div p {
+  color: hsl(0, 100%, 74%);
+  text-align: end;
+  margin-top: 10px;
+  font-weight: 500;
+  font-style: italic;
 }
 
 #claim {
+  text-decoration: none;
+  outline: none;
   height: 52px;
   border: none;
   border-radius: 8px;
@@ -78,6 +114,15 @@ form input {
   font-weight: 500;
   box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#claim:hover {
+  background-color: hsl(154, 77%, 58%);
+}
+
+#claim:visited {
+  background-color: hsl(154, 77%, 58%);
 }
 
 form p {

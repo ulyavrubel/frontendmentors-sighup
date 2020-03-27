@@ -15,31 +15,70 @@
   <body>
     <main>
       <div id="leftBox">
-        <div id="header">
-          <h1>Learning to code by <br />watching others</h1>
+        <div class="vertically-center">
+          <div id="header">
+            <h1>Learning to code by <br />watching others</h1>
+          </div>
+          <p>
+            See how experienced developers solve problems in real-time.<br />
+            Watching scripted tutorials is great, but understanding how
+            <br />developers think is invaluable.
+          </p>
         </div>
-        <p>
-          See how experienced developers solve problems in real-time.<br />
-          Watching scripted tutorials is great, but understanding how
-          <br />developers think is invaluable.
-        </p>
       </div>
       <div id="rightBox">
-        <button id="try">
-          <b>Try it free 7 days</b> then $20/mo. thereafter
-        </button>
-        <form>
-          <input placeholder="First Name" type="text" id="firstName" />
-          <input placeholder="Last Name" type="text" id="lastName" />
-          <input placeholder="Email Address" type="email" id="email" />
-          <input placeholder="Password" type="password" id="password" />
-          <button id="claim" type="submit">CLAIM YOUR FREE TRIAL</button>
-          <p>
-            By clicking the button, you are agreeing to our
-            <a href="#"><b>Terms and Services</b></a>
-          </p>
-        </form>
+        <div class="vertically-center">
+          <button id="try">
+            <b>Try it free 7 days</b> then $20/mo. thereafter
+          </button>
+          <form novalidate>
+            <div>
+              <input
+                placeholder="First Name"
+                type="text"
+                id="firstName"
+                required
+              />
+            </div>
+
+            <div>
+              <input
+                placeholder="Last Name"
+                type="text"
+                id="lastName"
+                required
+              />
+            </div>
+
+            <div>
+              <input
+                placeholder="Email Address"
+                type="email"
+                id="email"
+                required
+              />
+            </div>
+
+            <div>
+              <input
+                placeholder="Password"
+                type="password"
+                id="password"
+                required
+              />
+            </div>
+
+            <button id="claim" type="submit">
+              CLAIM YOUR FREE TRIAL
+            </button>
+            <p>
+              By clicking the button, you are agreeing to our
+              <a href="#"><b>Terms and Services</b></a>
+            </p>
+          </form>
+        </div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
