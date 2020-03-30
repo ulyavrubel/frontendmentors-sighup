@@ -94,7 +94,7 @@ form input:focus:valid {
   background-position: 420px 15px;
 }
 
-form div p {
+.error {
   color: hsl(0, 100%, 74%);
   text-align: end;
   margin-top: 10px;
@@ -134,4 +134,107 @@ form p {
 form p a {
   text-decoration: none;
   color: hsl(0, 100%, 74%);
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  main {
+    flex-direction: column;
+    padding: 100px 23px 0px 23px;
+    align-items: center;
+  }
+
+  .vertically-center {
+    position: static;
+    top: 0;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  #leftBox {
+    margin: auto;
+    width: 328px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  #leftBox h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  #leftBox p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  #rightBox {
+    width: 100vw;
+    margin: 70px 0 70px 0;
+    padding: 0;
+  }
+
+  #try {
+    width: 328px;
+    height: 88px;
+    font-weight: normal;
+    margin: 0 auto;
+    display: block;
+  }
+
+  form {
+    width: 278px;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+  }
+
+  form div {
+    width: 278px;
+    margin-bottom: 16px;
+  }
+
+  .error p {
+    margin-left: 0;
+  }
+
+  form input {
+    width: 240px;
+    padding: 20px;
+  }
+
+  .submitted {
+    border: 2px solid hsl(0, 100%, 74%);
+    background: url(./img/icon-error.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 240px 15px;
+  }
+
+  #claim {
+    width: 282px;
+    margin-bottom: 15px;
+  }
+
+  #tms {
+    text-align: center;
+    padding-right: 26px;
+    padding-left: 26px;
+    line-height: 2;
+  }
 }
